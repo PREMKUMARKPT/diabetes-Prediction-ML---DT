@@ -6,6 +6,22 @@ The repository includes essential files such as `diabetes.ipynb`, which contains
 The machine learning models used in this project are evaluated based on accuracy, precision, recall, F1-score, and the ROC-AUC curve to ensure reliable predictions. Contributions to improve the model or enhance the analysis are welcome, and the project is open-source under the MIT license.
 
 # Diabetes Prediction Project
+Before starting an ML project, it's important to preprocess and clean the data properly. Here are the key steps:
+
+Checking the column spelling – Ensure column names are correctly spelled and follow a consistent format.
+Checking for null (missing) values – Identify missing data and decide how to handle it (e.g., filling with mean/median, dropping rows/columns, or using predictive imputation).
+Checking data types – Ensure numerical values are correctly recognized as numbers and categorical values as categories. Convert data types if necessary.
+Handling duplicates – Remove duplicate rows to prevent bias in the model.
+Handling outliers – Detect and treat outliers using methods like the IQR method or Z-score analysis.
+Encoding categorical variables – Convert categorical features into numerical representations (e.g., one-hot encoding, label encoding).
+Feature scaling – Normalize or standardize numerical features to improve model performance.
+Feature engineering – Create new meaningful features or transform existing ones to improve model accuracy.
+Splitting the dataset – Divide the dataset into training, validation, and testing sets to evaluate model performance.
+Checking class balance – If dealing with classification, ensure the target classes are balanced; if not, consider oversampling/undersampling techniques.
+Removing irrelevant features – Drop unnecessary columns that do not contribute to the prediction task.
+Correlation analysis – Check relationships between features to remove highly correlated ones and prevent multicollinearity.
+Handling time-series data (if applicable) – Sort by time, create lag features, and check for trends and seasonality.
+Data augmentation (if needed) – Generate additional samples in cases of small datasets (useful in deep learning).
 
 ## Overview
 This project aims to predict diabetes in patients using machine learning models. The dataset consists of medical measurements such as glucose levels, blood pressure, insulin levels, BMI, and other health indicators. The project involves data preprocessing, exploratory data analysis (EDA), model training, and evaluation.
